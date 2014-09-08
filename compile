@@ -1,6 +1,7 @@
 HADOOP_HOME=/usr/local/hadoop
 javac -classpath ${HADOOP_HOME}/share/hadoop/common/hadoop-common-2.4.1.jar:${HADOOP_HOME}/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.4.1.jar:${HADOOP_HOME}/share/hadoop/common/lib/hadoop-annotations-2.4.1.jar *.java
 rm -rf edu
+rm -f RootHadoop.jar
 mkdir -p edu/tamu/hadoop
 mv *.class edu/tamu/hadoop
 jar cvf RootHadoop.jar edu
